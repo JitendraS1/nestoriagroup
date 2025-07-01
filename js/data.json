@@ -1,0 +1,273 @@
+{
+    "team": [
+        {
+            "director": [
+                {
+                    "id" : "8dc5c6a8-6feb-4f17-8fcd-3bf3634ef8bd",
+                    "name": "nitin singh tomar",
+                    "jd": "Director",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "54888101-f2df-4438-a2af-d28f5f4f02dc",
+                    "name": "mohan singh tomar",
+                    "jd": "Director",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                }
+            ]
+        },
+        {
+            "sales": [
+                {
+                    "id" : "60501274-3f35-44cc-9300-d9629d4186d3",
+                    "name": "Kuldeep Soni",
+                    "jd": "Sales Director",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {
+                    "id" : "fbba74ad-944c-4b4a-ac92-95eb5cbe88b2",
+                    "name": "Devendra Singh Sikarwar",
+                    "jd": "Sales Director",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {
+                    "id" : "faa6048e-89f4-488f-b9db-3927283b9cd0",
+                    "name": "Arvind Singh Tomar",
+                    "jd": "Sales Director",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "d55ea8de-cccb-489b-b557-9f826c122ac3",
+                    "name": "Ramendra Singh Tomar",
+                    "jd": "Sales Director",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "7f5c2e99-5740-4019-bb3b-72bad372c66d",
+                    "name": "Ankit SIngh Chouhan",
+                    "jd": "Sales Director",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "a1ffa602-600f-4fb1-a051-11af66899523",
+                    "name": "Jagdish Patel",
+                    "jd": "Sales Director",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "c1454a18-3d2b-4523-9d95-cfe430e2b2f2",
+                    "name": "Aditya Sharma",
+                    "jd": "Sales Director",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                }
+            ]
+        },
+        {
+            "legal": [
+                {   "id" : "d19223f0-f99e-440a-9270-57ccb9880ff2",
+                    "name": "Bhavna Vyas",
+                    "jd": "Legal Head",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "cf997e1b-2edb-456f-a58f-9b8e122403db",
+                    "name": "Shahjahan Pathan",
+                    "jd": "Assistant Legal",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "737cec21-8c71-4a87-bdcb-af089dff64a5",
+                    "name": "Rekha Bharvad",
+                    "jd": "Legal",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "bd5c43c3-2204-46ca-9866-582ff92fb5f1",
+                    "name": "Arth Vyas",
+                    "jd": "Legal",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "8ead1460-cd2f-4075-bdcd-bd75793872e6",
+                    "name": "Jyoti Borisa",
+                    "jd": "Legal",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "a8830de6-177d-4486-9968-ce9716213533",
+                    "name": "chhaya Fadadu",
+                    "jd": "Legal",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "5f3d4665-fb4f-4740-b2f0-ae040c7ac312",
+                    "name": "Nishtha Gogra",
+                    "jd": "Legal",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                }
+            ]
+        },
+        {
+            "tally Sales": [
+                {   "id" : "e2c8efb5-edd6-424d-921e-6b0851af3658",
+                    "name": "Dilsha Lalwani",
+                    "jd": "Senior tally Caller",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "a3e1c785-d699-4f10-9c92-1969d434c206",
+                    "name": "Nita Trivedi",
+                    "jd": "Senior tally Caller",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "e9292c6d-2cd0-45d0-84e6-4dbb2e00707d",
+                    "name": "Kajal Makwana",
+                    "jd": "tally Caller",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "10896b17-f176-4a04-81c0-03bd23f9f94f",
+                    "name": "Chandrika Bhoi",
+                    "jd": "Tally Caller",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                }
+                
+            ]
+        },
+        {
+            "visit department": [
+                {   "id" : "a84be7eb-0f03-4b58-8e8d-d5803829e47f",
+                    "name": "Komal Singh",
+                    "jd": "Visit Manager",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "ea5c47d5-e678-41c1-8d61-ef3e9b0e13b3",
+                    "name": "Tarun Badgujar",
+                    "jd": "Visit Assistant",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "3da5a0e3-a907-4e0d-a14e-2b1382e33d75",
+                    "name": "Krishana Tomar",
+                    "jd": "Visit Assistant",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "3da5a0e3-a907-4e0d-a14e-2b1382e33d75", 
+                    "name": "Pushapraj Tomar",
+                    "jd": "Visit Assistant",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "d0d42722-dd72-474c-afd6-6637fef1cb31", 
+                    "name": "Rupendra Sharma",
+                    "jd": "Visit Assistant",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "9ac0536f-0f85-4db3-b574-d0ca757cf630",
+                    "name": "Sohanlal Patidar",
+                    "jd": "Visit Assistant",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "6b016c09-143f-4b66-a138-185f0069e5cb",
+                    "name": "Manu Parmar",
+                    "jd": "Visit Assistant",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                }
+                
+                
+            ]
+        },
+        {
+            "media": [
+                {   "id" : "9ee79099-c894-46af-a35c-8af9e3baf064",
+                    "name": "Shreyansh Bajpai",
+                    "jd": "marketing head",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "ba45a99d-2cae-4c08-960f-276401d00e49",
+                    "name": "yash moteriya",
+                    "jd": "Graphic Designer",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                },
+                {   "id" : "392a3e3e-9b34-4cce-a2e5-b92cc966fead",
+                    "name": "Mukesh makwana",
+                    "jd": "Visit Assistant",
+                    "image": "https://ik.imagekit.io/bhadoriyaji/mohansir.jpg?updatedAt=1749496083343"
+                }
+                
+            ]
+        }
+    ],
+    "faq": [
+        {
+            "qna" : [
+                {   
+                    "question" : " What is Dholera SIR and why is it important?",
+                    "answer" : "Dholera Special Investment Region (SIR) is India's first greenfield smart city, planned under the Delhi-Mumbai Industrial Corridor (DMIC). It is being developed with world-class infrastructure, digital connectivity, and sustainable design, making it one of the most promising investment zones in India."
+                },
+                {
+                    "question" : " Is Dholera SIR a good investment opportunity in 2025?",
+                    "answer" : "Yes, Dholera SIR is considered one of the top real estate investment opportunities in India due to government backing, rapid infrastructure development, and increasing demand for smart city projects."
+                },
+                {
+                    "question" : "What types of land are available in Dholera SIR (residential, commercial, industrial)?",
+                    "answer" : "At Nestoria Group, we offer a wide range of verified plots including residential, commercial, industrial, and agricultural lands across various TP (Town Planning) zones within Dholera SIR."
+                },
+                {
+                    "question" : "How do I buy land in Dholera Smart City with Nestoria Group?",
+                    "answer" : "Simply contact our expert team. We provide end-to-end services including site visits, documentation, legal verification, and registration assistance for buying land in Dholera SIR."
+                },
+                {
+                    "question" : "Is Dholera SIR a government-approved smart city project?",
+                    "answer" : "Yes. Dholera SIR is a government-approved mega infrastructure project under the DMIC and supported by the Government of Gujarat and Government of India."
+                },
+                {
+                    "question" : "What are TP (Town Planning) zones in Dholera SIR?",
+                    "answer" : "TP zones are mapped development areas within Dholera SIR, each with specific planning for residential, commercial, and industrial use. TP1 to TP6 are among the most active and investment-ready zones."
+                },
+                {
+                    "question" : "What is the price range of plots in Dholera SIR?",
+                    "answer" : "Plot prices in Dholera SIR vary based on location, zone, and plot size. Prices generally start from ₹600 per sq.ft and go upwards depending on proximity to infrastructure and activation areas."
+                },
+                {
+                    "question" : "Can NRIs invest in Dholera SIR land through Nestoria Group?",
+                    "answer" : "Absolutely. Nestoria Group offers complete support for NRI investors including virtual site tours, online documentation, and legal formalities to help them invest with confidence."
+                },
+                {
+                    "question" : "Is the land legally verified and safe for purchase in Dholera SIR?",
+                    "answer" : "Yes, all land deals handled by Nestoria Group go through strict legal due diligence. We only deal with government-approved plots with clean titles and updated records."
+                },
+                {
+                    "question" : "How does Nestoria Group ensure transparency in land deals?",
+                    "answer" : "We provide 100% documentation, legal clarity, GST-compliant billing, and transparent pricing. Our clients are involved and informed at every step of the process."
+                },
+                {
+                    "question" : "What infrastructure developments are planned in Dholera SIR?",
+                    "answer" : "Major projects include Dholera International Airport, expressways, metro rail connectivity, solar parks, logistic hubs, and industrial corridors, making it a fully integrated smart city."
+                },
+                {
+                    "question" : "What are the benefits of investing early in Dholera Smart City?",
+                    "answer" : "Early investors benefit from low entry prices, high growth potential, and government incentives. Property appreciation is expected to multiply significantly as infrastructure develops."
+                },
+                {
+                    "question" : "How far is Dholera SIR from Ahmedabad and the upcoming airport?",
+                    "answer" : "Dholera SIR is around 100 km from Ahmedabad and just 20 km from the upcoming Dholera International Airport, providing excellent regional and international connectivity."
+                },
+                {
+                    "question" : "What is the Dholera SIR Activation Area?",
+                    "answer" : "The Activation Area is the first phase of Dholera’s development where infrastructure and utilities are already in progress. It is a hot zone for early investments and industrial setups."
+                },
+                {
+                    "question" : "Are there financing or EMI options available for land in Dholera?",
+                    "answer" : "Yes. Nestoria Group partners with financial institutions and offers flexible installment options for selected plots. We also assist in bank loan documentation for eligible clients."
+                },
+                {
+                    "question" : "Can I visit the Dholera site before purchasing?",
+                    "answer" : "Yes. Nestoria Group arranges guided site visits from Ahmedabad and surrounding areas, ensuring you get a complete understanding of the land, zone, and infrastructure."
+                },
+                {
+                    "question" : "What kind of support does Nestoria Group offer after buying land?",
+                    "answer" : "We offer post-sale support including mutation, land registration, boundary marking, and assistance with resale, construction, and documentation."
+                },
+                {
+                    "question" : "How do I resell my land in Dholera SIR in the future?",
+                    "answer" : "We assist in resale by connecting you with verified buyers and handling legal and registration work. Many early investors have seen significant appreciation in land value."
+                },
+                {
+                    "question" : "Is it better to invest in residential or commercial land in Dholera?",
+                    "answer" : "Both are great options depending on your goal. Residential plots offer long-term appreciation, while commercial plots near highways and airports offer quick ROI and rental returns."
+                },
+                {
+                    "question" : "Why choose Nestoria Group over other real estate companies in Dholera?",
+                    "answer" : "Nestoria Group is a trusted name with a strong reputation for transparency, local expertise, legal clarity, and customer-first service. We’ve helped 100s of clients secure verified plots in Dholera SIR."
+                }
+            ]
+
+        }
+    ]
+}
