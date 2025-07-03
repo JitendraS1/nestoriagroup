@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <title>Nestoria Group | Dholera SIR | Dholera Smart City</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta name="keywords" content="
+    <meta name="keywords" content="
 Dholera SIR, Dholera Smart City, land for sale in Dholera, buy land in Dholera, Dholera real estate, Dholera SIR investment, smart city investment, Dholera SIR plots, residential land in Dholera, commercial land in Dholera, Dholera industrial plots, Dholera property rates, Dholera SIR latest update, property in Dholera SIR, Dholera greenfield city, Dholera project, Dholera SIR activation area, TP zones in Dholera, Dholera land booking, Dholera master plan, Dholera SIR map, Dholera SIR infrastructure, Dholera smart city plan, land developers in Dholera, best plots in Dholera, Dholera SIR news, Dholera land price, Dholera land investment, plots in Dholera smart city, Dholera development authority, Dholera SIR approved projects, Dholera SIR residential plots, Dholera metro city, Dholera city plan, Dholera smart city Gujarat, smart city in Gujarat, Dholera SIR land records, buy land in smart city, Dholera real estate company, real estate agent in Dholera, verified plots in Dholera, NRI investment in Dholera, government projects in Dholera, Dholera investment opportunity, top real estate in Dholera, Dholera SIR site visit, low budget plots in Dholera, farmland in Dholera SIR, Dholera investment guide, best area to invest in Dholera, Dholera SIR property dealer, Dholera commercial property, buy residential plots in Dholera, freehold land in Dholera SIR, Ahmedabad to Dholera property, Dholera smart city brochure, upcoming projects in Dholera, Dholera land agent, Dholera real estate portal, Dholera property website, Dholera SIR zone map, Nestoria Group Dholera, best land rates in Dholera, Dholera airport plots, Dholera future city, smart investment in Dholera, industrial land Dholera SIR, Dholera affordable plots, real estate company Gujarat, Dholera real estate consultant, invest in Dholera 2025, Dholera government approved land, Dholera SIR plots for NRI, Dholera growth city, buy Dholera TP plots, Dholera activation zone land, Dholera DMIC project, Dholera highway land, Dholera expressway property, Dholera smart zone property, Dholera best ROI plots, Dholera legal land, Dholera verified land seller, Dholera upcoming township, Dholera land registry help, Dholera realty market, Dholera SIR industrial city, Dholera SIR zone wise plots, plots near Dholera airport, Dholera NRI plots, plots for sale Gujarat Dholera, Dholera estate consultancy, smart plots in Dholera SIR, Dholera mega city project, invest in Gujarat Dholera, Dholera smart city future, Dholera land schemes, buy property in Dholera SIR
 ">
 
-<meta name="description" content="Nestoria Group is a trusted real estate company specializing in buying and selling land in Dholera SIR. Discover residential, commercial, and industrial plots in India's first smart city with 100% legal support and expert guidance. Invest smartly with Nestoria today.">
-<meta name="author" content="Nestoria Group">
-<meta property="og:image" content="https://nestoriagroup.netlify.app/img/logo-dark.png">
+    <meta name="description"
+        content="Nestoria Group is a trusted real estate company specializing in buying and selling land in Dholera SIR. Discover residential, commercial, and industrial plots in India's first smart city with 100% legal support and expert guidance. Invest smartly with Nestoria today.">
+    <meta name="author" content="Nestoria Group">
+    <meta property="og:image" content="https://nestoriagroup.netlify.app/img/logo-dark.png">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
@@ -53,7 +54,7 @@ Dholera SIR, Dholera Smart City, land for sale in Dholera, buy land in Dholera, 
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s" id="Topbar">
-        
+
     </div>
     <!-- Topbar End -->
 
@@ -61,7 +62,7 @@ Dholera SIR, Dholera Smart City, land for sale in Dholera, buy land in Dholera, 
     <!-- Navbar Start -->
     <nav id="nav" class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn"
         data-wow-delay="0.1s">
-        
+
     </nav>
     <!-- Navbar End -->
 
@@ -177,23 +178,79 @@ Dholera SIR, Dholera Smart City, land for sale in Dholera, buy land in Dholera, 
         </div>
     </div>
     <!-- Contact End -->
-     
+    <!--Email message script start-->
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Stop form from submitting normally
 
+            const form = e.target;
+            const formData = new FormData(form);
+
+            const messageDiv = document.getElementById("form-message");
+            messageDiv.textContent = "Sending message...";
+
+            fetch("send-mail.php", {
+                method: "POST",
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        messageDiv.textContent = "✅ Message sent successfully!";
+                        form.reset();
+                    } else {
+                        messageDiv.textContent = "❌ " + data.error;
+                    }
+                    // Remove the message after 3 seconds
+                    setTimeout(() => {
+                        messageDiv.textContent = "";
+                    }, 3000);
+                })
+                .catch(error => {
+                    messageDiv.textContent = "❌ Error sending message.";
+                    console.error("AJAX error:", error);
+                    // Remove the message after 3 seconds
+                    setTimeout(() => {
+                        messageDiv.textContent = "";
+                    }, 3000);
+                });
+        });
+    </script>
+
+    <!--Email message script End-->
+
+    <style>
+        #form-message {
+
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #form-message.success {
+            color: green;
+        }
+
+        #form-message.error {
+            color: red;
+        }
+    </style>
+
+    <div id="form-message"></div>
 
     <!-- Google Map Start -->
     <div class="container-xxl pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
         <iframe class="w-100 mb-4" style="height: 450px;"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9136043465014!2d72.5094251!3d23.0269442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b0011439e3d%3A0x5d04ddda8181c13e!2sNestoria%20Group!5e0!3m2!1sen!2sin!4v1749296136404!5m2!1sen!2sin"
             frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        
+
     </div>
     <!-- Google Map End -->
 
 
     <!-- Footer Start -->
-    <div id="footer" class="container-fluid bg-dark text-body footer pt-5 px-0 wow fadeIn" data-wow-delay="0.1s" >
-        
-       
+    <div id="footer" class="container-fluid bg-dark text-body footer pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+
+
     </div>
     <!-- Footer End -->
 
@@ -215,10 +272,12 @@ Dholera SIR, Dholera Smart City, land for sale in Dholera, buy land in Dholera, 
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
-    
+
     <script type="text/JavaScript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="./js/componets.js"></script>
     <script src="js/main.js"></script>
+
+
 </body>
 
 </html>

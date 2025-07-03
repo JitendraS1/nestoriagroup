@@ -141,14 +141,14 @@ const Footer = () => {
         </div>
         <div class="container-fluid copyright ">
             <div class="container ">
-                <div class="row justify-content-center">
+                <div class="row ">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         &copy;
                         <a href="https://nestoriagroup.com">Nestoria Group Of Company's</a>, All Right Reserved.
                     </div>
-                    <!--// <div class="col-md-6 text-center text-md-end">
-                    //     Designed By <a href=""> Nestoria </a>
-                    // </div>-->
+                     <div class="col-md-6 text-center text-md-end">
+                        Designed By <a href="javascript:void(0)"> Nestoria </a>
+                     </div>
                 </div>
             </div>
         </div>`;
