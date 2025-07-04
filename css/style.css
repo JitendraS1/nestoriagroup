@@ -147,7 +147,9 @@ h6,
         position: absolute;
         height: 100vh;
         object-fit: contain;
+
     }
+  
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }

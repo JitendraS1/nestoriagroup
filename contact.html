@@ -156,7 +156,7 @@ Dholera SIR, Dholera Smart City, land for sale in Dholera, buy land in Dholera, 
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="contact" name="contact"
-                                        placeholder="Please enter your contact">
+                                        placeholder="Contact">
                                     <label for="contact">Contact</label>
                                 </div>
                             </div>
@@ -178,64 +178,99 @@ Dholera SIR, Dholera Smart City, land for sale in Dholera, buy land in Dholera, 
         </div>
     </div>
     <!-- Contact End -->
+
+
+    <!-- Toast Container -->
+<div aria-live="polite" aria-atomic="true" class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999;">
+  <div id="form-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto" id="toast-title"></strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body" id="toast-body"></div>
+  </div>
+</div>
     <!--Email message script start-->
     <script>
-        document.getElementById("contact-form").addEventListener("submit", function (e) {
-            e.preventDefault(); // Stop form from submitting normally
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop form from submitting normally
 
-            const form = e.target;
-            const formData = new FormData(form);
+    const form = e.target;
+    const formData = new FormData(form);
 
-            const messageDiv = document.getElementById("form-message");
-            messageDiv.textContent = "Sending message...";
+    showToast("Info", "Sending message...", "bg-info text-white");
 
-            fetch("send-mail.php", {
-                method: "POST",
-                body: formData
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        messageDiv.textContent = "✅ Message sent successfully!";
-                        form.reset();
-                    } else {
-                        messageDiv.textContent = "❌ " + data.error;
-                    }
-                    // Remove the message after 3 seconds
-                    setTimeout(() => {
-                        messageDiv.textContent = "";
-                    }, 3000);
-                })
-                .catch(error => {
-                    messageDiv.textContent = "❌ Error sending message.";
-                    console.error("AJAX error:", error);
-                    // Remove the message after 3 seconds
-                    setTimeout(() => {
-                        messageDiv.textContent = "";
-                    }, 3000);
-                });
-        });
-    </script>
+    fetch("send-mail.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showToast("Success", "✅ Message sent successfully!", "bg-success text-white");
+            form.reset();
+        } else {
+            showToast("Error", "❌ " + data.error, "bg-danger text-white");
+        }
+    })
+    .catch(error => {
+        console.error("AJAX error:", error);
+        showToast("Error", "❌ Error sending message.", "bg-danger text-white");
+    });
+});
+
+// Function to show Bootstrap Toast
+function showToast(title, body, headerClass) {
+    const toastEl = document.getElementById("form-toast");
+    const toastTitle = document.getElementById("toast-title");
+    const toastBody = document.getElementById("toast-body");
+
+    toastTitle.textContent = title;
+    toastBody.textContent = body;
+
+    // Reset header classes and apply new
+    toastEl.querySelector(".toast-header").className = "toast-header " + headerClass;
+
+    const bsToast = new bootstrap.Toast(toastEl, { delay: 3000 });
+    bsToast.show();
+}
+</script>
+
 
     <!--Email message script End-->
 
-    <style>
+    <!-- <style>
         #form-message {
-
-            margin-top: 10px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            /* background: #f0f0f0;
+            border: 1px solid #ccc; */
+            border-radius: 4px;
             font-weight: bold;
+            /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); */
+            z-index: 9999;
+            transition: opacity 0.3s ease;
         }
 
+        /* Green text for success */
         #form-message.success {
-            color: green;
+            color: #155724;
+            background: #d4edda;
+            border-color: #c3e6cb;
         }
 
+        /* Red text for error */
         #form-message.error {
-            color: red;
+            color: #721c24;
+            background: #f8d7da;
+            border-color: #f5c6cb;
         }
     </style>
+ -->
 
-    <div id="form-message"></div>
+    <!-- <div id="form-message"></div> -->
 
     <!-- Google Map Start -->
     <div class="container-xxl pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">

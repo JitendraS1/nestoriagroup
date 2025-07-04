@@ -80,7 +80,7 @@ const Footer = () => {
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">
                         <img class="me-1" src="img/logo1.png"
-                            height="50" alt="Icon" />
+                            height="50" alt="Icon" style="margin: 0 0 0 -25px;" />
                     </h3>
                     <p class="mb-2">
                         <i class="fa fa-map-marker-alt text-primary me-3"></i>3rd Floor,
@@ -93,19 +93,7 @@ const Footer = () => {
                     <p class="mb-2">
                         <i class="fa fa-envelope text-primary me-3"></i>info@nestoriagroup.com
                     </p>
-                    <div class="d-flex pt-2">
-                        <!-- <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a> -->
-                        <a class="btn btn-square btn-outline-body me-1" href="https://www.youtube.com/@nestoriagroup"><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1"
-                            href="https://www.instagram.com/nestoria.group?igsh=MTlod3kxYWlmc2Njcw=="><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1"
-                            href="https://www.facebook.com/share/1Ai3udDNR4/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-body me-0"
-                            href="https://www.linkedin.com/company/nestoriagroup/"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Services</h3>
@@ -136,6 +124,20 @@ const Footer = () => {
                     <a class="btn btn-link" href="team.html">Team Members</a>
                     <a class="btn btn-link" href="achievements.html">Achievements</a>
                     <a class="btn btn-link" href="service.html">Company Profile</a>
+
+                    <div class="d-flex pt-2">
+                        <!-- <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a> -->
+                        <a class="btn btn-square btn-outline-body me-1" href="https://www.youtube.com/@nestoriagroup"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1"
+                            href="https://www.instagram.com/nestoria.group?igsh=MTlod3kxYWlmc2Njcw=="><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1"
+                            href="https://www.facebook.com/share/1Ai3udDNR4/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-body me-0"
+                            href="https://www.linkedin.com/company/nestoriagroup/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
