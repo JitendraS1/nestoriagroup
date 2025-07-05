@@ -7,8 +7,7 @@ function openBrochure() {
 
 const Navbar = () => {
   return ` <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <img class="me-1" src="https://ik.imagekit.io/bhadoriyaji/logo2.png?updatedAt=1749496082721" height="50"
-                alt="Icon">
+            <img class="me-1" src="img/logo2.png" height="60px" alt="Icon">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -23,7 +22,7 @@ const Navbar = () => {
                         <a href="about.html" class="dropdown-item">About Us</a>
                         <a href="about-dholera.html" class="dropdown-item">About Dholera SIR</a>
                         <!--<a href="feature.html" class="dropdown-item">Our Features</a> -->
-                       <!-- <a href="project.html" class="dropdown-item">Our Projects</a> -->
+                        <a href="project.html" class="dropdown-item">Our Projects</a>
                         <a href="team.html" class="dropdown-item">Team Members</a>
                         <a href="achievements.html" class="dropdown-item">Achievements</a>
                         <a href="videos.html" class="dropdown-item">Videos Page</a>
@@ -33,7 +32,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 
-                <a href="project.html" class="nav-item nav-link">Project's</a>
+                <a href="project.html" class="nav-item nav-link">Land</a>
                 <a href="blog.html" class="nav-item nav-link">Blog</a>
                 <a href="faq.html" class="nav-item nav-link">Faq's</a>
             </div>
