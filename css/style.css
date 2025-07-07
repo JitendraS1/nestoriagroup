@@ -12,6 +12,26 @@
     --text_secondry: #b7a290;
 }
 
+
+/********** scrolbar Css **********/
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+      scroll-behavior: smooth;
+
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--primary);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--nestoria_brown);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--primary);  /* creates padding around scroll thumb */
+}
+
+
 h1,
 h2,
 .h1,
