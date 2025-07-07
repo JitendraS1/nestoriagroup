@@ -7,7 +7,7 @@ function openBrochure() {
 
 const Navbar = () => {
   return ` <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <img class="me-1" src="img/logo2.png" height="60px" alt="Icon">
+            <img class="me-1" src="img/logo2.png" height="50px" alt="Icon">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>

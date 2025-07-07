@@ -145,7 +145,7 @@ h6,
     }
 .header-carousel .owl-carousel-item img {
         position: absolute;
-        height: 100vh;
+        height: auto;
         object-fit: contain;
 
     }
