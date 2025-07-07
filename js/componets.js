@@ -1,26 +1,24 @@
 // <-- pdf Viwe -->
 
-function openBrochure() {
-    window.open('brochure.html', '_blank');
-  }
-
+// function openBrochure() {
+//     window.open('brochure.html', '_blank');
+//   }
 
 const Navbar = () => {
   return ` <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <img class="me-1" src="img/logo2.png" height="50px" alt="Icon">
+            <img class="me-1" src="img/logo2.png" height="60px" alt="Nestoria Group">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="index.html" class="nav-item nav-link ">Home</a>
                 <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
                     <div class="dropdown-menu border-0 m-0">
                         <a href="about.html" class="dropdown-item">About Us</a>
-                        <a href="about-dholera.html" class="dropdown-item">About Dholera SIR</a>
                         <!--<a href="feature.html" class="dropdown-item">Our Features</a> -->
                         <a href="project.html" class="dropdown-item">Our Projects</a>
                         <a href="team.html" class="dropdown-item">Team Members</a>
@@ -31,14 +29,14 @@ const Navbar = () => {
                         <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
                     </div>
                 </div>
-                
-                <a href="project.html" class="nav-item nav-link">Land</a>
+                <a href="about-dholera.html" class="nav-item nav-link">About Dholera SIR</a>
+                <a href="land-deals.html" class="nav-item nav-link">Land Deals</a>
                 <a href="blog.html" class="nav-item nav-link">Blog</a>
                 <a href="faq.html" class="nav-item nav-link">Faq's</a>
             </div>
             <a href="contact.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Contact Us</a>
         </div>`;
-}
+};
 
 const Topbar = () => {
   return `<div class="row gx-0 d-none d-lg-flex">
@@ -53,7 +51,8 @@ const Topbar = () => {
             <div class="col-lg-5 px-5 text-end">
                  <div class="h-100 d-inline-flex align-items-center py-3 me-2">
                   <!--  <a class="text-body px-2" onclick="openBrochure()" href="#">Newsletters</a> -->
-                    <a class="text-body px-2" onclick="openBrochure()" href="#">Brochure</a>
+                   <!-- <a class="text-body px-2" onclick="openBrochure()" href="#">Brochure</a> -->
+                    <a class="text-body px-2" target="_blank"  href="https://dholera.gujarat.gov.in/web/document/download?model=brochure.download&field=brochure_file&filename_field=Dholera%20Brochure%202025.pdf&id=1">Brochure</a>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center" id="medialinks">
                 <a class="btn btn-square btn-outline-body me-1" target="_blank" href="https://www.youtube.com/@nestoriagroup"><i class="fab fa-youtube"></i></a>
@@ -63,15 +62,13 @@ const Topbar = () => {
                 </div>
             </div>
         </div>`;
-}
+};
 
-
-const Loader = () =>{
+const Loader = () => {
   return `<div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
         </div>
-        <img class="position-absolute top-50 start-50 translate-middle" height="60" src="img/logo.png" alt="Icon">`
-}
-
+        <img class="position-absolute top-50 start-50 translate-middle" height="60" src="img/logo.png" alt="Icon">`;
+};
 
 const Footer = () => {
   return ` <div class="container py-5">
@@ -153,24 +150,12 @@ const Footer = () => {
                 </div>
             </div>
         </div>`;
-}
+};
 // const Counter = () =>{
 //   return ` `;
 // }
 
-
-
-
-
 // const footer = document.getElementById('footer');
-
-
-
-
-
-
-
-
 
 //  <!-- <div class="nav-item dropdown">
 //                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -203,15 +188,14 @@ const Footer = () => {
 //         });
 // });
 
-
 // <-- team data -->
 let apiUrl = "https://68495f9145f4c0f5ee712315.mockapi.io/nestoria";
 
-  fetchTasks = async () => {
+fetchTasks = async () => {
   try {
     const res = await fetch(apiUrl, {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
     });
 
     if (!res.ok) {
@@ -220,56 +204,54 @@ let apiUrl = "https://68495f9145f4c0f5ee712315.mockapi.io/nestoria";
 
     const tasks = await res.json();
     const [firstTask] = tasks;
-const [firstFaq] = firstTask.faq;
+    const [firstFaq] = firstTask.faq;
 
-console.log("Fetched QnA:", firstFaq.qna);
-// console.log("Fetched team:", firstTask.team);
+    console.log("Fetched QnA:", firstFaq.qna);
+    // console.log("Fetched team:", firstTask.team);
 
-questiondata(firstFaq.qna);
-
+    questiondata(firstFaq.qna);
 
     // Do something with the tasks here
-
   } catch (error) {
     console.error("Fetch error:", error.status);
   }
-}
+};
 
-let accordion = document.getElementById('accordionFlushExample');
+let accordion = document.getElementById("accordionFlushExample");
 
 let questiondata = (data) => {
   accordion.innerHTML = ""; // Clear existing content
 
   data.forEach((q, i) => {
     // Create accordion item
-    const accordionItem = document.createElement('div');
-    accordionItem.className = 'accordion-item';
+    const accordionItem = document.createElement("div");
+    accordionItem.className = "accordion-item";
 
     // Header
-    const header = document.createElement('h2');
-    header.className = 'accordion-header';
+    const header = document.createElement("h2");
+    header.className = "accordion-header";
     header.id = `flush-heading-${i}`;
 
-    const button = document.createElement('button');
-    button.className = 'accordion-button collapsed';
-    button.type = 'button';
-    button.setAttribute('data-bs-toggle', 'collapse');
-    button.setAttribute('data-bs-target', `#flush-collapse-${i}`);
-    button.setAttribute('aria-expanded', 'false');
-    button.setAttribute('aria-controls', `flush-collapse-${i}`);
+    const button = document.createElement("button");
+    button.className = "accordion-button collapsed";
+    button.type = "button";
+    button.setAttribute("data-bs-toggle", "collapse");
+    button.setAttribute("data-bs-target", `#flush-collapse-${i}`);
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-controls", `flush-collapse-${i}`);
     button.innerText = `Q ${i + 1}. ${q.question}`;
 
     // Collapse container
-    const collapseDiv = document.createElement('div');
+    const collapseDiv = document.createElement("div");
     collapseDiv.id = `flush-collapse-${i}`;
-    collapseDiv.className = 'accordion-collapse collapse';
-    collapseDiv.setAttribute('aria-labelledby', `flush-heading-${i}`);
-    collapseDiv.setAttribute('data-bs-parent', '#accordionFlushExample');
+    collapseDiv.className = "accordion-collapse collapse";
+    collapseDiv.setAttribute("aria-labelledby", `flush-heading-${i}`);
+    collapseDiv.setAttribute("data-bs-parent", "#accordionFlushExample");
 
     // Accordion body
-    const body = document.createElement('div');
-    body.className = 'accordion-body';
-    body.innerHTML ="<b>ANS -</b> "+  q.answer;
+    const body = document.createElement("div");
+    body.className = "accordion-body";
+    body.innerHTML = "<b>ANS -</b> " + q.answer;
 
     // Append all elements properly
     header.appendChild(button);
@@ -280,24 +262,21 @@ let questiondata = (data) => {
   });
 };
 
-
 // let teamdata = (team) =>{
 //     console.log(team , " le bhosdike data")
 // }
 
-
-
 fetchTasks();
-  const topbar = document.getElementById('Topbar');
-  const loader = document.getElementById('spinner');
-  const navbar = document.getElementById('nav');
-  const footer = document.getElementById('footer');
+const topbar = document.getElementById("Topbar");
+const loader = document.getElementById("spinner");
+const navbar = document.getElementById("nav");
+const footer = document.getElementById("footer");
 
 if (navbar) {
   navbar.innerHTML = Navbar();
 }
-if (loader){
-    loader.innerHTML = Loader();
+if (loader) {
+  loader.innerHTML = Loader();
 }
 
 if (topbar) {
@@ -308,3 +287,72 @@ if (footer) {
   footer.innerHTML = Footer();
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all top-level navigation links
+  const navLinks = document.querySelectorAll(
+    ".navbar-nav .nav-item .nav-link:not(.dropdown-toggle)"
+  );
+  // Select all dropdown items
+  const dropdownItems = document.querySelectorAll(".navbar-nav .dropdown-item");
+
+  // Function to remove 'active' class from all links
+  function removeActiveClass() {
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+    });
+    dropdownItems.forEach((item) => {
+      item.classList.remove("active");
+    });
+  }
+
+  // Add click event listeners to top-level links
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      removeActiveClass(); // Remove 'active' from all first
+      this.classList.add("active"); // Add 'active' to the clicked link
+    });
+  });
+
+  // Add click event listeners to dropdown items
+  dropdownItems.forEach((item) => {
+    item.addEventListener("click", function (event) {
+      removeActiveClass(); // Remove 'active' from all first
+      this.classList.add("active"); // Add 'active' to the clicked dropdown item
+
+      // Optional: If you want the 'About' parent dropdown-toggle to also be active
+      // when a dropdown item inside it is clicked:
+      const parentDropdownToggle =
+        this.closest(".dropdown").querySelector(".dropdown-toggle");
+      if (parentDropdownToggle) {
+        parentDropdownToggle.classList.add("active");
+      }
+    });
+  });
+
+  // Optional: Highlight the active link based on the current URL
+  // This is useful when the page loads, to show the currently active page.
+  const currentPath = window.location.pathname.split("/").pop(); // e.g., "index.html", "about.html"
+
+  if (currentPath === "" || currentPath === "index.html") {
+    // Special handling for home page (empty path or index.html)
+    document.querySelector('a[href="index.html"]').classList.add("active");
+  } else {
+    // Find the link that matches the current path
+    const matchingLink = document.querySelector(
+      `.navbar-nav a[href="${currentPath}"]`
+    );
+    if (matchingLink) {
+      matchingLink.classList.add("active");
+
+      // If the matching link is a dropdown item, also activate its parent dropdown toggle
+      if (matchingLink.classList.contains("dropdown-item")) {
+        const parentDropdownToggle = matchingLink
+          .closest(".dropdown")
+          .querySelector(".dropdown-toggle");
+        if (parentDropdownToggle) {
+          parentDropdownToggle.classList.add("active");
+        }
+      }
+    }
+  }
+});

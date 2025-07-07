@@ -4,7 +4,7 @@
     --light: #F8F8F8;
     --dark: #252525; */
     --primary: #E4CDBA;
-    --nestoria_border:#FFD700 ;
+    --nestoria_border: #FFD700;
     --light: #f4f4f4;
     --dark: #252525;
     --nestoria_brown: #74443e;
@@ -105,7 +105,7 @@ h6,
 
 .btn-outline-body:hover {
     color: var(--nestoria_brown);
-   font-size: 16px;
+    font-size: 16px;
 }
 
 
@@ -143,13 +143,14 @@ h6,
         margin-right: 0;
         padding: 10px 0;
     }
-.header-carousel .owl-carousel-item img {
+
+    .header-carousel .owl-carousel-item img {
         position: absolute;
         height: auto;
         object-fit: contain;
 
     }
-  
+
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
@@ -184,7 +185,7 @@ h6,
     left: 0;
     display: flex;
     align-items: center;
-    /* background: rgba(0, 0, 0, .8); */
+    background: rgba(0, 0, 0, .4);
 }
 
 @media (max-width: 768px) {
@@ -280,7 +281,7 @@ h6,
 
 .fact-item:hover .fact-icon {
     background: var(--nestoria_brown);
-    border-image: linear-gradient(to right, #E4CDBA 0%, #EFBF04  100%) 1;
+    border-image: linear-gradient(to right, #E4CDBA 0%, #EFBF04 100%) 1;
 }
 
 .fact-item .fact-icon i {
@@ -339,6 +340,9 @@ h6,
 .service-item .service-text {
     background: var(--light);
     transition: .5s;
+    box-shadow: 0px 10px 10px -7px rgba(115, 68, 62, 0.75);
+    -webkit-box-shadow: 0px 10px 10px -7px rgba(115, 68, 62, 0.75);
+    -moz-box-shadow: 0px 10px 10px -7px rgba(115, 68, 62, 0.75);
 }
 
 .service-item:hover .service-text {
@@ -524,15 +528,16 @@ h6,
 
 /*** Footer ***/
 
-.footer{
+.footer {
     background-image: url(../img/Footer\ Image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
 
-   
+
 
 }
+
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
@@ -577,6 +582,3 @@ h6,
 .footer .copyright a:hover {
     color: var(--primary);
 }
-
-
-

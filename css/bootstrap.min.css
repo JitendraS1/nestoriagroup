@@ -7181,8 +7181,12 @@ fieldset:disabled .btn {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.shadow-sm {
+/* .shadow-sm {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+} */
+
+.shadow-sm{
+    box-shadow: #73443e 0px 0px 10px 0px !important;
 }
 
 .shadow-lg {
