@@ -32,7 +32,7 @@ const Navbar = () => {
                 <a href="about-dholera.html" class="nav-item nav-link">About Dholera SIR</a>
                 <a href="land-deals.html" class="nav-item nav-link">Land Deals</a>
                 <a href="blog.html" class="nav-item nav-link">Blog</a>
-                <a href="faq.html" class="nav-item nav-link">Faq's</a>
+                <a href="faq.html" class="nav-item nav-link">Faq</a>
             </div>
             <a href="contact.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Contact Us</a>
         </div>`;
@@ -52,7 +52,7 @@ const Topbar = () => {
                  <div class="h-100 d-inline-flex align-items-center py-3 me-2">
                   <!--  <a class="text-body px-2" onclick="openBrochure()" href="#">Newsletters</a> -->
                    <!-- <a class="text-body px-2" onclick="openBrochure()" href="#">Brochure</a> -->
-                    <a class="text-body px-2" target="_blank"  href="https://dholera.gujarat.gov.in/web/document/download?model=brochure.download&field=brochure_file&filename_field=Dholera%20Brochure%202025.pdf&id=1">Brochure</a>
+                    <a class="text-body px-2" target="_blank"  href="">Brochure</a>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center" id="medialinks">
                 <a class="btn btn-square btn-outline-body me-1" target="_blank" href="https://www.youtube.com/@nestoriagroup"><i class="fab fa-youtube"></i></a>
@@ -79,9 +79,8 @@ const Footer = () => {
                             height="50" alt="Icon" style="margin: 0 0 0 -25px;" />
                     </h3>
                     <p class="mb-2">
-                        <i class="fa fa-map-marker-alt text-primary me-3"></i>3rd Floor,
-                        Sarthik Complex, Satellite Rd, Ramdev Nagar, Ahmedabad, Gujarat
-                        380015
+                        <i class="fa fa-map-marker-alt text-primary me-3"></i>Nestoria Buildcon PVT LTD
+                         3rd Floor, Sarthik Annexe, Satallite Road, Nr. Iscon Cross Road,Ahmedabad-380015
                     </p>
                     <p class="mb-2">
                         <i class="fa fa-phone-alt text-primary me-3"></i>+91 74860 - 03361
@@ -89,7 +88,19 @@ const Footer = () => {
                     <p class="mb-2">
                         <i class="fa fa-envelope text-primary me-3"></i>info@nestoriagroup.com
                     </p>
-                    
+                    <div class="d-flex pt-2">
+                        <!-- <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a> -->
+                        <a class="btn btn-square btn-outline-body me-1" href="https://www.youtube.com/@nestoriagroup"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1"
+                            href="https://www.instagram.com/nestoria.group?igsh=MTlod3kxYWlmc2Njcw=="><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1"
+                            href="https://www.facebook.com/share/1Ai3udDNR4/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-body me-0"
+                            href="https://www.linkedin.com/company/nestoriagroup/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Services</h3>
@@ -112,7 +123,7 @@ const Footer = () => {
                     <a class="btn btn-link" href="contact.html">Contact Us</a>
                     <a class="btn btn-link" href="service.html">Our Services</a>
                     <a class="btn btn-link" href="project.html">Projects</a>
-                    <a class="btn btn-link" href="faq.html">Faq's</a>
+                    <a class="btn btn-link" href="faq.html">Faq</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">&nbsp;&nbsp;&nbsp;&nbsp;</h3>
@@ -121,19 +132,7 @@ const Footer = () => {
                     <a class="btn btn-link" href="achievements.html">Achievements</a>
                     <a class="btn btn-link" href="service.html">Company Profile</a>
 
-                    <div class="d-flex pt-2">
-                        <!-- <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a> -->
-                        <a class="btn btn-square btn-outline-body me-1" href="https://www.youtube.com/@nestoriagroup"><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1"
-                            href="https://www.instagram.com/nestoria.group?igsh=MTlod3kxYWlmc2Njcw=="><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1"
-                            href="https://www.facebook.com/share/1Ai3udDNR4/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-body me-0"
-                            href="https://www.linkedin.com/company/nestoriagroup/"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    
                 </div>
             </div>
         </div>

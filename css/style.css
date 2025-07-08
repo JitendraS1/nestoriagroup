@@ -1,19 +1,19 @@
 /********** Nestoria CSS **********/
 :root {
-    /* --primary: #B78D65;
-    --light: #F8F8F8;
-    --dark: #252525; */
+    
     --primary: #E4CDBA;
-    --nestoria_border: #FFD700;
     --light: #f4f4f4;
-    --dark: #252525;
+    --dark: #111820;
     --nestoria_brown: #74443e;
-    --nestoria_bule: #111820;
     --text_secondry: #b7a290;
 }
 
 
 /********** scrolbar Css **********/
+
+/* html {
+  cursor: url('../favicon/favicon.ico'), default;
+} */
 
 body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
@@ -63,6 +63,7 @@ h6,
     bottom: 30px;
     z-index: 99;
 }
+
 
 
 /*** Spinner ***/
