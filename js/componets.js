@@ -13,7 +13,7 @@ const Navbar = () => {
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="index.html" class="nav-item nav-link active">Home</a>
                 <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
@@ -190,7 +190,7 @@ const Footer = () => {
 // <-- team data -->
 let apiUrl = "https://68495f9145f4c0f5ee712315.mockapi.io/nestoria";
 
-fetchTasks = async () => {
+const fetchTasks = async () => {
   try {
     const res = await fetch(apiUrl, {
       method: "GET",
@@ -203,18 +203,21 @@ fetchTasks = async () => {
 
     const tasks = await res.json();
     const [firstTask] = tasks;
-    const [firstFaq] = firstTask.faq;
 
-    console.log("Fetched QnA:", firstFaq.qna);
-    // console.log("Fetched team:", firstTask.team);
+    if (firstTask && firstTask.faq && firstTask.faq.length > 0) {
+      const [firstFaq] = firstTask.faq;
+      questiondata(firstFaq.qna);
+    } else {
+      console.warn("No FAQ data found.");
+    }
 
-    questiondata(firstFaq.qna);
-
-    // Do something with the tasks here
   } catch (error) {
-    console.error("Fetch error:", error.status);
+    console.error("Fetch error:", error.message); // or just `error` to see full info
   }
 };
+
+// fetchTasks();
+
 
 let accordion = document.getElementById("accordionFlushExample");
 
